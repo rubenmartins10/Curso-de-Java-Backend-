@@ -15,7 +15,7 @@ public class operadoresAtribuicaoCumulativa {
 		
 		double conta = 50.0;
 		if ( minutos > 100 ) {
-			//
+			//conta = conta + (minutos - 100) * 2.0;
 			conta += (minutos - 100) * 2.0; //mesma coisa 
 		}
 		
