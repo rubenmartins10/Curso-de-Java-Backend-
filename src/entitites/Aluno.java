@@ -6,18 +6,6 @@ public class Aluno {
 	public double nota1;
 	public double nota2;
 	
-	public double semestre1() {
-		return nota * 0.30;
-	}
-	
-	public double semestre2() {
-		return nota1 * 0.35;
-	}
-	
-	public double semestre3() {
-		return nota2 * 0.35;
-	}
-	
 	public double notaFinal() {
         return (nota * 0.30) + (nota1 * 0.35) + (nota2 * 0.35);
     }
