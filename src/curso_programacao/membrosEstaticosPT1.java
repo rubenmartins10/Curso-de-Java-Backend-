@@ -13,16 +13,15 @@ public class membrosEstaticosPT1 {
 		
 		System.out.print("Enter radius: ");
 		double radius = sc.nextDouble();
+						
+		double c = Calculator.circumference(radius);
 		
-		Calculator calc = new Calculator();
-				
-		double c = calc.circumference(radius);
-		
-		double v = calc.volume(radius);
+		double v = Calculator.volume(radius); //na parte 2 da aula de membros estáticos, definimos as funções na classe como static
+											// e assim só nos precisamos de chamar pelo nome da classe para chamar pela função
 		
 		System.out.printf("Circumference %.2f%n ", c);
 		System.out.printf("Volume: %.2f%n ", v);
-		System.out.printf("PI value: %.2f%n ", calc.PI);
+		System.out.printf("PI value: %.2f%n ", Calculator.PI);
 		
 		
 		
