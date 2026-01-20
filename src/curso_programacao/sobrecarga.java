@@ -20,6 +20,12 @@ public class sobrecarga {
 		double price = sc.nextDouble();
 		Product product = new Product(name, price); //o programador agora é obrigado a colocar os dados do produto no momento da instanciação dele
 		
+		product.setName("Computer"); //definir um novo nome quando a variável é privada
+		System.out.println("Updated name: " + product.getName());
+		
+		product.setName(1200);
+		System.out.println("Updated price: " + product.getPrice());
+		
 		System.out.println();
 		System.out.println("Product data: " + product);
 		

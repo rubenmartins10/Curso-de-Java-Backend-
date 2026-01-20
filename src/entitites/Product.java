@@ -2,9 +2,9 @@ package entitites;
 
 public class Product {
 	
-	public String name;
-	public double price;
-	public int quantity;
+	private String name;
+	private double price;
+	private int quantity;
 	
 	//colocamos sempre o construtor depois dos atributos e antes dos métodos
 	public Product (String name, double price, int quantity) {
@@ -24,6 +24,26 @@ public class Product {
 		quantity = 0; //a linguagem java por padrão inicializa números de objetos e arrays em 0
 	}
 	
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public double getPrice() {
+		return price;
+	}
+	
+	public void setName(double price) {
+		this.price = price;
+	}
+	
+	public int getQuantity() {
+		return quantity;
+	}
 	
 	
 	public double totalValueInStock() {
