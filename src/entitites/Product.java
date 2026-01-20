@@ -6,6 +6,15 @@ public class Product {
 	public double price;
 	public int quantity;
 	
+	//colocamos sempre o construtor depois dos atributos e antes dos métodos
+	public Product (String name, double price, int quantity) {
+		//este construtor obrigada a fornecer o nome, o preço e a quantidade
+		this.name = name; //uma forma de diferenciar o atributo do objeto do parametro do objeto
+		this.price = price;
+		this.quantity = quantity;
+	}
+	
+	
 	public double totalValueInStock() {
 		return price * quantity;
 	}
