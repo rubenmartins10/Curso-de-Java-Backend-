@@ -12,7 +12,18 @@ public class Product {
 		this.name = name; //uma forma de diferenciar o atributo do objeto do parametro do objeto
 		this.price = price;
 		this.quantity = quantity;
+		
 	}
+			//PROPOSTA DE MELHORIA, ONDE VAMOS CRIAR UM CONSTRUTOR OPCIONAL,
+			//O QUAL RECEBE APENAS O NOME E O PREÇO, A QUANTIDADE EM STOCK É INICIADA A 0
+	
+	public Product (String name, double price) {
+		//este construtor obrigada a fornecer o nome, o preço e a quantidade
+		this.name = name; //uma forma de diferenciar o atributo do objeto do parametro do objeto
+		this.price = price;
+		quantity = 0; //a linguagem java por padrão inicializa números de objetos e arrays em 0
+	}
+	
 	
 	
 	public double totalValueInStock() {
