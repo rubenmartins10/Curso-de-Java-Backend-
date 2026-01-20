@@ -6,6 +6,8 @@ public class Product {
 	private double price;
 	private int quantity;
 	
+	/*
+	
 	//colocamos sempre o construtor depois dos atributos e antes dos métodos
 	public Product (String name, double price, int quantity) {
 		//este construtor obrigada a fornecer o nome, o preço e a quantidade
@@ -14,6 +16,7 @@ public class Product {
 		this.quantity = quantity;
 		
 	}
+	*/
 			//PROPOSTA DE MELHORIA, ONDE VAMOS CRIAR UM CONSTRUTOR OPCIONAL,
 			//O QUAL RECEBE APENAS O NOME E O PREÇO, A QUANTIDADE EM STOCK É INICIADA A 0
 	
@@ -46,6 +49,15 @@ public class Product {
 	}
 	
 	
+	//feito com as funções do eclipse	
+	public Product(String name, double price, int quantity) {
+		super();//se a classe Product for subclasse de alguma outra que executa alguma coisa importante no construtor
+				//ele vai chamar o construtor da super classe
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+	}
+
 	public double totalValueInStock() {
 		return price * quantity;
 	}
