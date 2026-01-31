@@ -16,7 +16,7 @@ public class exercicio1 {
 		
 		for (int i = 0; i < n; i++) {
             System.out.print("Digite um numero: ");
-            vect[i] = sc.nextInt(); 
+            vect[i] = sc.nextInt(); //guarda diretamente o número no índice i do vetor
         }
 		
 		for (int i = 0; i < n; i++) {
